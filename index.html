@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- FontAwesom CSS -->
+  <link rel="sttlesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Gelasio:400,400i,500,500i|Lakki+Reddy|Righteous|Roboto+Mono:400,400i,500,500i|Solway:400,500|Ubuntu:400,400i,500,500i&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/030811dd8a.js" crossorigin="anonymous"></script>
+  <title>Isaac Sims</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #21d4fd;
+      background-image: linear-gradient(341deg, #21d4fd 0%, #b721ff 100%);
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .gelasio {
+      font-family: "Gelasio", serif;
+    }
+
+    .solway {
+      font-family: "Solway", serif;
+    }
+
+    .ubuntu {
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .lakki {
+      font-family: "Lakki Reddy", cursive;
+    }
+
+    .righteous {
+      font-family: 'Righteous', cursive;
+    }
+
+    .mono {
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .opacity-0 {
+      opacity: 0;
+    }
+
+    .opacity-10 {
+      opacity: 0.1;
+    }
+
+    .opacity-20 {
+      opacity: 0.2;
+    }
+
+    .opacity-30 {
+      opacity: 0.3;
+    }
+
+    .opacity-40 {
+      opacity: 0.4;
+    }
+
+    #top .opacity-50 {
+      opacity: 0.5;
+    }
+
+    .opacity-60 {
+      opacity: 0.6;
+    }
+
+    .opacity-70 {
+      opacity: 0.7;
+    }
+
+    .opacity-80 {
+      opacity: 0.8;
+    }
+
+    .opacity-90 {
+      opacity: 0.9;
+    }
+
+    .opacity-100 {
+      opacity: 1;
+    }
+
+    .spacer {
+      margin-bottom: 90vh;
+    }
+
+    .fixed-back {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      -ms-background-size: 100%;
+      -o-background-size: 100%r;
+      -moz-background-size: 100%;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+
+    @media (max-width: 991px) {
+      #top-back {
+        background-image: url(img/gorillazs.jpg);
+        opacity: 0.2;
+        display: block;
+      }
+
+      #summary-back {
+        background-image: url(img/pfs.png);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #hobbies-back {
+        background-image: url(img/beatless.jpg);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #game-back {
+        background-image: url(img/jacks.jpeg);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #welcome-back {
+        background-image: url(img/griffins.jpg);
+        opacity: 0.2;
+        display: none;
+      }
+    }
+
+    @media (min-width: 992px) {
+      #top-back {
+        background-image: url(img/gorillaz.jpg);
+        opacity: 0.2;
+        display: block;
+      }
+
+      #summary-back {
+        background-image: url(img/pf.png);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #hobbies-back {
+        background-image: url(img/beatles.jpg);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #game-back {
+        background-image: url(img/jack.jpeg);
+        opacity: 0.2;
+        display: none;
+      }
+
+      #welcome-back {
+        background-image: url(img/griffin.jpg);
+        opacity: 0.2;
+        display: none;
+      }
+    } 
+    .spacer-t{
+      height: 90vh;
+    }
+    /* font-family: 'Gelasio', serif;
+      font-family: 'Solway', serif;
+      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Righteous', cursive;
+      font-family: 'Lakki Reddy', cursive;
+      font-family: 'Roboto Mono', monospace; */
+    /* div {
+      border: solid 1px black;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid fixed-back" id="top-back"></div>
+  <div class="container-fluid fixed-back" id="summary-back"></div>
+  <div class="container-fluid fixed-back" id="hobbies-back"></div>
+  <div class="container-fluid fixed-back" id="game-back"></div>
+  <div class="container-fluid fixed-back" id="welcome-back"></div>
+  <div class="container-fluid text-light" id="main-content">
+    <div class="row align-items-start">
+      <div class="col righteous pt-3 spacer" id="top">
+        <h1 class="text-center display-2">
+          Isaac Sims
+        </h1>
+        <h1 class="text-center lakki">
+          Individual Final Project
+        </h1>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="offset-lg-2 offset-0 col-lg-8 col-12 spacer" id="summary">
+        <h4 class="solway font-weight-bold font-italic">Experience</h4>
+        <ul class="list-unstyled ml-5">
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;NKU Student
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Can use java, python, html, css, javascript, and
+            jquery
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;Proficient in Calculus, Chemistry, Computer Science, and Biology
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Started collge with 20+
+            credit hours
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="offset-lg-2 offset-0 col-lg-8 col-12 spacer" id="game">
+        <h4 class="solway font-weight-bold font-italic">Background</h4>
+        <ul class="list-unstyled ml-5">
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Took part in community
+            choir(Kentucky Allstate Choir Attendant)
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Born in Fort Thomas, Kentucky, raised in Cynthiana, Kentucky
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Graduated from Harrison County High School in May 2019 with a 4.0
+            GPA
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Live on a farm
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="offset-lg-2 offset-0 col-lg-8 col-12  spacer" id="hobbies">
+        <h4 class="solway font-weight-bold font-italic">What I Do For Fun</h4>
+        <ul class="list-unstyled ml-5">
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Follow technology news
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Build
+            PCs
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Surf the web
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Video Games
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Anime
+          </li>
+          <li class="mb-1">
+            <i class="fa fa-asterisk"></i>&nbsp;&nbsp;Listen to <abbr
+              title="Gorillaz, Beatles, Queen, Jack Stauber, ELO, JAY-Z, and Pink Floyd ">Music</abbr>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="offset-lg-2 offset-0 col-lg-8 col-12  spacer-t text-center" id="welcome">
+        <h1 class="righteous font-weight-bold font-italic display-4">Thank You!</h1>
+        <h2 class="lakki">Thank you for a great semester!</h4>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    // if($("top").isInViewport()){
+    //   $("#top-back").css("opacity","0.2")
+    //   $("#summary-back").css("opacity","0")
+    //   $("#hobbies-back").css("opacity","0")
+    //   $("#game-back").css("opacity","0")
+    // }
+    // if($("summary").isInViewport()){
+    //   $("#top-back").css("opacity","0")
+    //   $("#summary-back").css("opacity","0.2")
+    //   $("#hobbies-back").css("opacity","0")
+    //   $("#game-back").css("opacity","0")
+    // }
+    // if($("hobbies").isInViewport()){
+    //   $("#top-back").css("opacity","0")
+    //   $("#summary-back").css("opacity","0")
+    //   $("#hobbies-back").css("opacity","0.2")
+    //   $("#game-back").css("opacity","0")
+    // }
+    // if($("game").isInViewport()){
+    //   $("#top-back").css("opacity","0")
+    //   $("#summary-back").css("opacity","0")
+    //   $("#hobbies-back").css("opacity","0")
+    //   $("#game-back").css("opacity","0.2")
+    // }
+    $(document).ready(function () {
+      location.href = "#top";
+    });
+    // var lastScrollTop = 0;
+    $(window).scroll(function (event) {
+      // var st = $(this).scrollTop();
+      // if (st > lastScrollTop) {
+      // downscroll code
+      if ($("#top").isInViewport()) {
+        bg($("#top"), $("#top-back"));
+        $("#top-back").css("display", "block");
+      }
+      if ($("#top").isInViewport() == false) {
+        $("#top-back").css("display", "none");
+      }
+      if ($("#summary").isInViewport()) {
+        bg($("#summary"), $("#summary-back"));
+        $("#summary-back").css("display", "block");
+      }
+      if ($("#summary").isInViewport() == false) {
+        $("#summary-back").css("display", "none");
+      }
+      if ($("#hobbies").isInViewport()) {
+        bg($("#hobbies"), ($("#hobbies-back")));
+        $("#hobbies-back").css("display", "block");
+      }
+      if ($("#hobbies").isInViewport() == false) {
+        $("#hobbies-back").css("display", "none");
+      }
+      if ($("#game").isInViewport()) {
+        bg($("#game"), ($("#game-back")));
+        $("#game-back").css("display", "block");
+      }
+      if ($("#game").isInViewport() == false) {
+        $("#game-back").css("display", "none");
+      }
+      if ($("#welcome").isInViewport()) {
+        bg($("#welcome"), ($("#welcome-back")));
+        $("#welcome-back").css("display", "block");
+      }
+      if ($("#welcome").isInViewport() == false) {
+        $("#welcome-back").css("display", "none");
+      }
+      // } else {
+      //   if ($("#top").isInViewport()) {
+      //     topbgup();
+      //   }
+      //   if ($("#top").isInViewport()==false) {
+      //     $("#top-back").css("opacity","0")
+      //   }
+      // if ($("#summary").isInViewport()) {
+      //   summarybgup();
+      // }
+      // if ($("#hobbies").isInViewport()) {
+      //   hobbiesbgup();
+      // }
+      // if ($("#game").isInViewport()) {
+      //   gamebgup();
+      // }
+      // if ($("#top").isInViewport()) {
+      //   topbg();
+      //   console.log($("#top").isInViewport());
+      // }
+      // if ($("#summary").isInViewport()) {
+      //   summarybg();
+      // }
+      // if ($("#hobbies").isInViewport()) {
+      //   hobbiesbg();
+      // }
+      // if ($("#game").isInViewport()) {
+      //   gamebg();
+      // }
+      // }
+      // lastScrollTop = st;
+    });
+    function bg(element, backelement) {
+      var elementTop = $(element).offset().top;
+      var elementBottom = elementTop + $(element).outerHeight();
+      console.log(elementBottom);
+      var viewportTop = $(window).scrollTop();
+      console.log(viewportTop);
+      var viewportBottom = viewportTop + $(window).height();
+      console.log(viewportBottom);
+      var vtet = elementTop - viewportTop;
+      if(element.attr("id") == "welcome"){
+        vtet = (vtet*1.2);
+      }
+      console.log(vtet);
+      var vtvb = (viewportBottom - viewportTop);
+      console.log(elementTop);
+      var opval = ((vtvb - vtet) / vtvb) / 5;
+      if (opval >= 0.2) {
+        console.log(backelement.css("opacity"));
+        opval = 0.2
+      }
+      $(backelement).css("opacity", opval);
+      console.log(element.attr("id") + " " + backelement.attr("id"));
+      console.log(backelement.css("opacity"));
+      $(element).css("opacity", opval * 5)
+    }
+    // function summarybg() {
+    //   var elementTop = $("#summary").offset().top;
+    //   var elementBottom = elementTop + $("#summary").outerHeight();
+    //   var elementMiddle = elementTop - elementBottom;
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementMiddle - viewportTop) / (elementTop - elementMiddle)) / 0.20
+    //   $("#summary-back").css("opacity", newopacity);
+    // }
+    // function hobbiesbg() {
+    //   var elementTop = $("#hobbies").offset().top;
+    //   var elementBottom = elementTop + $("#hobbies").outerHeight();
+    //   var elementMiddle = elementTop - elementBottom;
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementMiddle - viewportTop) / (elementTop - elementMiddle)) / 0.20
+    //   $("#hobbies-back").css("opacity", newopacity);
+    // }
+    // function gamebg() {
+    //   var elementTop = $("#game").offset().top;
+    //   var elementMiddle = elementTop - elementBottom;
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementMiddle - viewportTop) / (elementTop - elementMiddle)) / 0.20
+    //   $("#game-back").css("opacity", newopacity);
+    // }
+    // function topbgup() {
+    //   var elementTop = $("#top").offset().top;
+    //   var elementBottom = elementTop + $("#top").outerHeight();
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementTop - viewportTop));
+    // $("#top-back").css("opacity", newopacity);
+    // }
+    // function summarybgup() {
+    //   var elementTop = $("#summary").offset().top;
+    //   var elementBottom = elementTop + $("#summary").outerHeight();
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementtop - viewportBottom) / elementtop) / 5;
+    //   $("#summary-back").css("opacity", newopacity);
+    // }
+    // function hobbiesbgup() {
+    //   var elementTop = $("#hobbies").offset().top;
+    //   var elementBottom = elementTop + $("#hobbies").outerHeight();
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementtop - viewportBottom) / elementtop) / 5;
+    //   $("#hobbies-back").css("opacity", newopacity);
+    // }
+    // function gamebgup() {
+    //   var elementTop = $("#game").offset().top;
+    //   var elementBottom = elementTop + $("#game").outerHeight();
+    //   var viewportTop = $(window).scrollTop();
+    //   var viewportBottom = viewportTop + $(window).height();
+    //   var newopacity = ((elementtop - viewportBottom) / elementtop) / 5;
+    //   $("#game-back").css("opacity", newopacity);
+    // }
+    $.fn.isInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+  </script>
+</body>
+
+</html>
